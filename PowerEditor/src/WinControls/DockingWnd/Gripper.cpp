@@ -923,4 +923,3 @@ void Gripper::initTabInformation()
 	_tcItem.cchTextMax	= 64;
 	::SendMessage(_hTabSource, TCM_GETITEM, _iItem, reinterpret_cast<LPARAM>(&_tcItem));
 }
-

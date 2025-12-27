@@ -27,8 +27,6 @@ class DockingCont;
 class DockingManager;
 
 
-
-
 // Used by getRectAndStyle() to draw the drag rectangle
 static const WORD DotPattern[] = 
 {
@@ -105,7 +103,7 @@ protected :
 	}
 
 private:
-    // Overlay window for multi-monitor drag rectangle (Issue #16805)
+	// Overlay window for multi-monitor drag rectangle (Issue #16805)
 	bool createOverlayWindow();
 	void destroyOverlayWindow();
 	static LRESULT CALLBACK overlayWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
@@ -140,7 +138,7 @@ private:
 
 	HBITMAP _hbm = nullptr;
 	HBRUSH _hbrush = nullptr;
-	
+
 	// Overlay window for multi-monitor support (Issue #16805)
 	HWND _hOverlayWnd = nullptr;
 	HDC _hdcOverlay = nullptr;
